@@ -35,11 +35,7 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd9ja38cbchbo1',
-        'USER': 'egahhoxfnemqxo',
-        'PASSWORD': '781f065d453297bb99c5512a2b54a8e5e64ac9e0d5b3f8e52542d70d70463f60',
-        'HOST': 'ec2-54-83-27-165.compute-1.amazonaws.com',
-        'PORT': '5432'
+
 
     }
 }
@@ -147,4 +143,4 @@ STATICFILES_DIRS = (
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
