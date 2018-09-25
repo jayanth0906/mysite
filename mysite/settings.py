@@ -35,8 +35,6 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-
-
     }
 }
 
@@ -58,7 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -143,4 +141,4 @@ STATICFILES_DIRS = (
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
