@@ -26,6 +26,12 @@ def post_list(request):
                    'posts': posts})
 
 
+def home(request):
+    template = "blog.html"
+    context = {}
+    return render(request, template, context)
+
+
 def post_detail(request, year, month, day, post):
     post = get_object_or_404(Post, slug=post,
                              status='published',
@@ -57,7 +63,7 @@ def post_share(request, post_id):
 
             post_url = request.build_absolute_uri(
 
-                post.get_absolute_url())
+                                                   post.get_absolute_url())
 
             subject = '{} ({}) recommends you reading "{}"'.format(cd['name'], cd['email'], post.title)
 
